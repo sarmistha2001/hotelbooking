@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../../node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="../../node_modules/bootstrap/dist/css/bootstrap.css">
+    <style>
+      fieldset{
+        position: absolute;
+        width:30%;
+        height:50%;
+        top: 10%;
+        left: 35%;
+        background-color: rgba(0, 0,0, 0.6);
+      }
+      .navbar-brand{
+            font-size: 50px;
+            font-family: arial;
+            text-shadow: 2px 2px 2px white;
+          }
+      .carousel{
+        position: relative;
+        
+        
+      }
+
+      @media screen and (orientation:portrait)
+      {
+        .navbar-brand{
+            font-size: 50px;
+            font-family: arial;}
+        .carousel-item img{
+          height:600px;
+        }
+        fieldset{
+         
+          position: absolute;
+        width: 90%;
+        height:60%;
+        top: 8%;
+        left:5%;
+        
+        }
+       .navbar{
+           padding:20px;
+       }
+        .carousel{
+        position: relative;
+      }
+      .btnclick{
+        display: flex;
+        justify-content: center;
+      }
+      .aboutimage{
+        display: none;
+      }
+      .para{
+        font-size: 20px;
+      padding-top: -15px;
+      }
+      .abouthead{
+        background-color: black;
+        padding: 100px;
+        color: white;
+        margin-bottom: 80px;
+      }
+      .gly img{
+        width:90%;
+     margin: 25px;
+     
+      }
+      .cards{
+        display: grid;
+      }
+      .crdimg {
+        margin-bottom: 20px;
+        
+      }
+      header{
+       display: block;
+      }
+      textarea{
+        width:99%;
+      }
+      iframe{
+        width: 99%;
+        margin-top: 10px;
+      }
+      }
+      @media screen and (orientation:landscape){
+        fieldset{
+         
+         position: absolute;
+       width:30%;
+       height:70%;
+       top:0%;
+       left:35%;
+       
+       }
+       .carousel-item img {
+      height:550px
+       }
+        
+        .crdimg {
+        margin-bottom:20px;
+      }
+      .gly img{
+        
+     margin-right:2px;
+     padding: 5px;
+      }
+      textarea{
+        width: 300px;
+      }
+    }
+    </style>
+
+</head>
+<body class="container-fluid">
+  <header >
+    <div class="navbar navbar-dark  navbar-expand-lg bg-dark text-white mt-2 d-block">
+        <div class="container-fluid">
+           <h2 class="navbar-brand  text-danger">SAMRAT</h2>
+           <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menuitem"><span class="navbar-toggler-icon"></span></button>
+           <div class="navbar-collapse collapse justify-content-end" id="menuitem" >
+            <ul class="navbar-nav me-auto mb-2 m-lg-0 ">
+                <li class="nav-item"><a class="nav-link" href="#home" >HOME</a></li>
+                <li class="nav-item"><a class="nav-link" href="#about">ABOUT</a></li>
+                <li class="nav-item"><a class="nav-link" href="#ourroom">OUR ROOM</a></li>
+                <li class="nav-item"><a class="nav-link" href="#gallary">GALLERY</a></li>
+                <li class="nav-item"><a class="nav-link" href="#blog">BLOG</a></li>
+                <li class="nav-item"><a class="nav-link" href="#contact">CONTACT US</a></li>
+            </ul>
+           </div>
+        </div>
+    </div>
+   </header>
+  <div class="carousel slide" data-bs-ride="carousel" id="home">
+    <div class="carousel-inner">
+      <div class="carousel-item active" data-bs-interval="200">
+        <img src="../images/banner1.jpg" class="d-block w-100 ">
+      </div>
+      <div class="carousel-item active" data-bs-interval="200">
+        <img src="../images/banner2.jpg" class="d-block w-100 ">
+      </div>
+      <div class="carousel-item active" data-bs-interval="200">
+        <img src="../images/banner3.jpg" class="d-block w-100 ">
+      </div>
+    </div>
+    <fieldset class="d-flex text justify-content-center p-3 mt-5 ">
+      <form class="text-white ">
+         <h5 class="py-3">BOOK A ROOM ONLINE </h5>
+         <dl>
+             <dt class="mb-3"> Arrival</dt>
+             <dd><input type="date" class="form-control mb-3"></dd>
+             <dt class="mb-3">Departure</dt>
+             <dd><input type="date" class="form-control mb-3"></dd>
+             <button class="btn btn-danger mt-2 justify-content-center ms-5 rounded-pill px-4" ><a href="./register.html" style="text-decoration:none; color:white">Book Now</a></button>
+         </dl>
+         
+      </form>
+  </fieldset>
+  </div>
+  <div id="about">
+    <h2 class="p-2 text-center bg-dark text-white mt-5 mb-2 "> About Us</h2>
+    <div class="row p-5 mt-5">
+      <div class="col-sm-4">
+        <h2 class=" text-center p-2 abouthead">ABOUT US</h2>
+       <p class="para">The passage experienced a surge in popularity during the 1960s when Letraset used it on their dry-transfer sheets, and again during the 90s as desktop publishers bundled the text with their software. Today it's seen all around the web; on templates, websites, and stock designs. Use our ge
+        nerator to get your own, or read on for the authoritative history of
+         lorem ipsum.</p>
+        <button class="btn-danger text-white rounded-pill  px-3 d-lg-none bg-dark  btnclick"> readmore</button>
+      </div>
+      <div class="col-1"></div>
+      <div class="col-lg-6 aboutimage">
+        <img src="../images/about.png" class="w-100 mt-5 h-50 ms-5">
+      </div>
+  </div>
+  <div id="ourroom" class="room">
+    <h2 class="p-2 text-center bg-dark text-white mb-5">Our room</h2>
+   <div class="d-flex ">
+    <div class="row">
+      <div class="col-sm-4">
+    <div class="card m-lg-3 crdimg">
+         
+        <div class="card-header ">
+          <img src="../images/room1.jpg" class="card-img-top">
+           <h3 class="text-center p-2">Bed Room</h3>
+           <p>if you are going to use a pass of loream ipsum, you need to be sure there</p>
+        </div>
+        </div>
+    </div>
+    <div class="col-sm-4">
+    <div class="card m-lg-3 crdimg">
+      
+     <div class="card-header ">
+      <img src="../images/room2.jpg" class="card-img-top">
+        <h3 class="text-center p-2">Bed Room</h3>
+        <p>if you are going to use a pass of loream ipsum, you need to be sure there</p>
+     </div>
+ </div>
+ </div>
+
+<div class="col-sm-4">
+ <div class="card m-lg-3 crdimg">
+  
+ <div class="card-header ">
+  <img src="../images/room3.jpg" class="card-img-top">
+    <h3 class="text-center p-2">Bed Room</h3>
+    <p>if you are going to use a pass of loream ipsum, you need to be sure there</p>
+ </div>
+</div>
+</div>
+
+
+   </div>
+</div>
+
+   <div class="d-flex ">
+    <div class="row">
+      
+      <div class="col-sm-4">
+    <div class="card m-lg-3 crdimg">
+         
+        <div class="card-header ">
+          <img src="../images/room4.jpg" class="card-img-top">
+           <h3 class="text-center p-2">Bed Room</h3>
+           <p>if you are going to use a pass of loream ipsum, you need to be sure there</p>
+        </div>
+    </div>
+   </div>
+
+   <div class="col-sm-4">
+    <div class="card m-lg-3 crdimg">
+      
+     <div class="card-header ">
+      <img src="../images/room5.jpg" class="card-img-top">
+        <h3 class="text-center p-2">Bed Room</h3>
+        <p>if you are going to use a pass of loream ipsum, you need to be sure there</p>
+     </div>
+ </div>
+ </div>
+
+<div class="col-sm-4">
+ <div class="card m-lg-3 crdimg">
+  
+ <div class="card-header ">
+  <img src="../images/room6.jpg" class="card-img-top">
+    <h3 class="text-center p-2">Bed Room</h3>
+    <p>if you are going to use a pass of loream ipsum, you need to be sure there</p>
+ </div>
+</div>
+</div>
+</div>
+   </div>
+
+  </div>
+
+  <div id="gallary">
+    <h2 class="p-2 text-center bg-dark text-white my-5">GALLERY</h2>
+   <div class="row my-5">
+    <div class="col-sm-3 gly">
+     <img src="../images/gallery1.jpg" class="ms-4">
+    </div>
+    <div class="col-sm-3 gly">
+      <img src="../images/gallery2.jpg" class="ms-4">
+     </div>
+     <div class="col-sm-3 gly">
+      <img src="../images/gallery3.jpg" class="ms-4">
+     </div>
+     <div class="col-sm-3 gly">
+      <img src="../images/gallery4.jpg" class="ms-4">
+     </div>
+   </div>
+
+   <div class="row my-5  " >
+    <div class="col-sm-3 gly">
+     <img src="../images/gallery5.jpg" class="ms-4">
+    </div>
+    <div class="col-sm-3 gly" >
+      <img src="../images/gallery6.jpg" class="ms-4">
+     </div>
+     <div class="col-sm-3 gly">
+      <img src="../images/gallery7.jpg" class="ms-4">
+     </div>
+     <div class="col-sm-3 gly">
+      <img src="../images/gallery8.jpg" class="ms-4">
+     </div>
+   </div>
+  </div>
+
+  <div id="blog">
+    <h2 class="p-2 text-center bg-dark text-white mb-5">BLOG</h2>
+    <div class="row">
+      <div class="col-sm-4">
+    <div class="card m-lg-3 crdimg">
+      <img src="../images/blog1card.jpg" class="card-img-top">
+        <div class="card-body ">
+          
+           <h3 class="text-center p-2">Bed Room</h3>
+           <p>if you are going to use a pass of loream ipsum, you need to be sure there</p>
+        </div>
+        </div>
+    </div>
+    <div class="col-sm-4">
+    <div class="card m-lg-3 crdimg">
+      <img src="../images/blog2card.jpg" class="card-img-top">
+     <div class="card-body ">
+      
+        <h3 class="text-center p-2">Bed Room</h3>
+        <p>if you are going to use a pass of loream ipsum, you need to be sure there</p>
+     </div>
+ </div>
+ </div>
+
+<div class="col-sm-4">
+ <div class="card m-lg-3 crdimg">
+  <img src="../images/blog3card.jpg" class="card-img-top">
+ <div class="card-body ">
+  
+    <h3 class="text-center p-2">Bed Room</h3>
+    <p>if you are going to use a pass of loream ipsum, you need to be sure there</p>
+ </div>
+</div>
+</div>
+</div>
+
+   </div>
+</div>
+  </div>
+
+  <div>
+
+  </div>
+
+
+  <div id="contact">
+    <h2 class="p-2 text-center bg-dark text-white mb-5 mt-5">CONTACT US</h2>
+<div class="row">
+  <div class="col-sm-5">
+  <form>
+    <ul class=" list-unstyled">
+      <li><input type="text" class="form-control mb-3" placeholder="Name"></li>
+      <li><input type="email" class="form-control mb-3" placeholder="Email"></li>
+      <li><input type="number" min="0" class="form-control mb-3" placeholder="Phone Number"></li>
+      <li><textarea placeholder="Meaasage" rows="5%" cols="70%"></textarea></li>
+    </ul>
+    <button class="btn btn-dark p-2 px-5 rounded-pill">SEND</button>
+  </form>
+  </div>
+  <div class="col-2"></div>
+
+  <div class="col-sm-5 map">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2055250.6566412018!2d78.9966081851542!3d17.093892978044178!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb99daeaebd2c7%3A0xae93b78392bafbc2!2sHyderabad%2C%20Telangana!5e0!3m2!1sen!2sin!4v1666492052499!5m2!1sen!2sin" width="500" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+
+
+</div>
+  </div >
+  
+  <script src="../../node_modules/jquery/dist/jquery.js"></script>
+  <script src="../../node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+</body>
